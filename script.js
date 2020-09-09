@@ -2,7 +2,7 @@ var firstName = prompt('What is your first name?');
 
 var birthMonth = prompt('What month were you born (full month name)?');
 
-var zodiacSign; 
+var zodiacSign;
 
 
 if ( birthMonth.toUpperCase() === 'JANUARY' ) {
@@ -46,5 +46,4 @@ if ( birthMonth.toUpperCase() === 'JANUARY' ) {
 }
 
 
-
-
+  document.querySelector(".result").innerHTML = `${firstName}, your birth sign for the month of ${birthMonth} is probably ${zodiacSign}.`
